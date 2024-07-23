@@ -1,0 +1,466 @@
+/* Estilos generales */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Estilos para la sección home */
+#home {
+    text-align: center;
+    padding: 20px;
+}
+
+#home h1 {
+    font-size: 35;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#home p {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.button-container {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente la imagen y el botón */
+    justify-content: center;
+    /* Centra horizontalmente el contenedor */
+    gap: 10px;
+    /* Espacio entre el botón y la imagen */
+    margin-top: 20px;
+    /* Espacio arriba del contenedor */
+}
+
+.button {
+    background-color: #638C45;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #568C30;
+}
+
+.logo {
+    width: 45px;
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 1em;
+}
+
+.video-grid a {
+    display: block;
+}
+
+.video-grid img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*  */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 1em;
+}
+
+.galeria-grid a {
+    display: block;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 200px;
+    /* Ajusta la altura según sea necesario */
+    object-fit: cover;
+    /* Asegura que las imágenes cubran el área del contenedor */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+#contact {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007BFF;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    color: #638C45;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+#contact-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#contact-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#contact-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #638C45;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+#contact-form button {
+    padding: 10px 15px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+#contact-form button:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+#contact-form button:active {
+    transform: scale(0.98);
+}
+
+
+/* Estilo para la sección de la aplicación */
+#app {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#app h2 {
+    color: #638C45;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+#app ul {
+    list-style-type: disc;
+    /* Estilo de lista, puede ser disc, circle, square, etc. */
+    padding-left: 20px;
+    /* Espacio a la izquierda para los puntos de la lista */
+    margin-left: 0;
+    /* Elimina el margen izquierdo predeterminado */
+    text-align: left;
+    /* Asegura que los elementos de la lista estén alineados a la izquierda */
+}
+
+#app ul li {
+    /* Estilos adicionales para los elementos de la lista si es necesario */
+    margin-bottom: 10px;
+    /* Espacio entre los elementos de la lista, ajusta según sea necesario */
+}
+
+#app p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estilos generales para el carrusel */
+.carousel-container {
+    position: relative;
+    width: 300px;
+    /* Ajusta el ancho según tus necesidades */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9;
+}
+
+/* Contenedor de las imágenes */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+    /* Evita que las imágenes se reduzcan en tamaño */
+    margin: 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Botones de navegación */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    /* Fondo oscuro */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 40px;
+    /* Tamaño del botón */
+    height: 40px;
+    /* Tamaño del botón */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.2);
+}
+
+/* Botón de navegación anterior */
+.carousel-button.prev {
+    left: 10px;
+}
+
+/* Botón de navegación siguiente */
+.carousel-button.next {
+    right: 10px;
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    /* Espaciado entre los indicadores */
+}
+
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background: #007BFF;
+    /* Color del indicador activo */
+}
+
+/* Estilos generales para la sección de deportes */
+#sports {
+    padding: 20px;
+    text-align: center;
+}
+
+#sports h2 {
+    color: #638C45;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#sports ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sports ul li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Asegúrate de que el nombre de la fuente coincida con el nombre real de la fuente */
+    font-size: 19px;
+    /* Ajusta el tamaño de la fuente según sea necesario */
+    margin: 10px 0;
+}
+
+/* Estilos para el modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Asegura que el modal esté encima de otros elementos */
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 80%;
+    border: 5px solid #fff;
+    border-radius: 8px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+}
